@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Attach",
+      "request": "attach",
+      "hostName": "localhost",
+      "port": "<debug port of the debuggee>"
+    },
+    {
+      "type": "java",
+      "name": "Launch ReverseWord",
+      "request": "launch",
+      "mainClass": "Strings.ReverseWord",
+      "projectName": "Java Code_724f8eb0"
+    },
+    {
+      "type": "java",
+      "name": "Launch ArrayListEx",
+      "request": "launch",
+      "mainClass": "Array.ArrayListEx",
+      "projectName": "Java Code_724f8eb0"
+    },
+    {
+      "type": "java",
       "name": "Launch AccessSpecifierCall",
       "request": "launch",
       "mainClass": "Oop.AccessSpecifierCall",
