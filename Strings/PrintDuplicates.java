@@ -15,9 +15,7 @@ public class PrintDuplicates {
             set.add(Character.valueOf(c));
 
         }
-
         set.remove(' ');
-
         System.out.println(set);
 
     }

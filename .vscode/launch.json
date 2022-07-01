@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch DoublyLL",
+      "request": "launch",
+      "mainClass": "LinkedList.DoublyLL",
+      "projectName": "Java Code_724f8eb0"
+    },
+    {
+      "type": "java",
+      "name": "Launch InnerSinglyLLHead",
+      "request": "launch",
+      "mainClass": "LinkedList.InnerSinglyLLHead",
+      "projectName": "Java Code_724f8eb0"
+    },
+    {
+      "type": "java",
+      "name": "Launch InnerSinglyLL",
+      "request": "launch",
+      "mainClass": "LinkedList.InnerSinglyLL",
+      "projectName": "Java Code_724f8eb0"
+    },
+    {
+      "type": "java",
+      "name": "Launch LastWordLength",
+      "request": "launch",
+      "mainClass": "Strings.LastWordLength",
+      "projectName": "Java Code_724f8eb0"
+    },
+    {
+      "type": "java",
       "name": "Attach",
       "request": "attach",
       "hostName": "localhost",
