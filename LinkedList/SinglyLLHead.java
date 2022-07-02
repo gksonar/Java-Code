@@ -1,20 +1,17 @@
 package LinkedList;
 
 public class SinglyLLHead {
-
     class Node {
         int value;
         Node next;
 
         public Node(int value) {
             this.value = value;
-
         }
 
         public Node(int value, Node node) {
             this.value = value;
             this.next = node;
-
         }
     }
 
@@ -30,7 +27,6 @@ public class SinglyLLHead {
         newnode.next = head;
         head = newnode;
         size += 1;
-
     }
 
     public void InsertAtLast(int val) {
@@ -44,9 +40,7 @@ public class SinglyLLHead {
             temp = temp.next;
         }
         temp.next = newnode;
-
         // tail = newnode;
-
         size += 1;
     }
 
@@ -68,7 +62,6 @@ public class SinglyLLHead {
         while (temp.next != null && count != position - 1) {
             temp = temp.next;
             count++;
-
         }
         nextnode = temp.next;
         temp.next = newnode;
@@ -85,11 +78,9 @@ public class SinglyLLHead {
         }
         head = head.next;
         size -= 1;
-
     }
 
     public void DeleteAtLast() {
-
         if (head.next == null) {
             head = null;
             return;
@@ -100,7 +91,6 @@ public class SinglyLLHead {
         }
         temp.next = null;
         size -= 1;
-
     }
 
     public void DeleteAtIndex(int position) {
@@ -134,13 +124,11 @@ public class SinglyLLHead {
         if (head == null) {
             System.out.println("Linked List is Empty");
         }
-
         while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
         System.out.println(slow.value);
-
     }
 
     public void FindNode(int val) {
@@ -166,7 +154,6 @@ public class SinglyLLHead {
             temp = temp.next;
         }
         System.out.print("End");
-
     }
 }
 
@@ -208,7 +195,5 @@ class InnerSinglyLLHead {
         System.out.println("\nFind Node: ");
         sl.FindNode(20);
         // sl.Display();
-
     }
-
 }

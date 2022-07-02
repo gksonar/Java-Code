@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch CircularLinkedList",
+      "request": "launch",
+      "mainClass": "LinkedList.CircularLinkedList",
+      "projectName": "Java Code_724f8eb0"
+    },
+    {
+      "type": "java",
       "name": "Launch DoublyLL",
       "request": "launch",
       "mainClass": "LinkedList.DoublyLL",
