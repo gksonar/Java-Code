@@ -40,7 +40,7 @@ public class Array_reverse {
         int arr[] = { 1, 2, 3, 7, 5 };
         Sort(arr);
         // reverse(arr,0,arr.length-1);
-        // rotate(arr , 2);
+        rotate(arr, 2);
         System.out.println(Arrays.toString(arr));
         insertAtposition(arr, 3, 88);
         System.out.println(Arrays.toString(arr));
