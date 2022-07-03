@@ -38,18 +38,21 @@ public class CircularLinkedList {
 
     }
 
-
     public boolean isCyclic() {
         Node slow = head;
-        Node fast= head;
-        while(slow.next!)
-        Node temp = head;
-        while (temp.next != head) {
-            System.out.print(temp.val + "-->");
-            temp = temp.next;
+        Node fast = head;
+        while (fast.next != head && fast != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                return true;
+            }
+
         }
-        System.out.println("head");
+        return false;
+
     }
+
     public void Display() {
         Node temp = head;
         while (temp.next != head) {
@@ -66,5 +69,6 @@ public class CircularLinkedList {
         cll.Insert(30);
         cll.Insert(40);
         cll.Display();
+        System.out.println(cll.isCyclic());
     }
 }
