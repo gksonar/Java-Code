@@ -29,7 +29,7 @@ public class Swapping {
         // System.out.println("After Swapping: " + a + " " + b);
 
         System.out.println("3nd\n Before Swapping:a:" + a + " b:" + b);
-        b = a + b - (a = b);
+        b = a + b - (a = b); // a+b b = b-a
         System.out.println("After Swapping: " + a + " " + b);
     }
 }

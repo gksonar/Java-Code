@@ -12,6 +12,7 @@ public abstract class AbstractClass {
 class HiGreet extends AbstractClass {
     String name;
 
+    @Override
     public void Greet(String name) {
         this.name = name;
     }
@@ -24,6 +25,7 @@ class HiGreet extends AbstractClass {
 class HelloGreet extends AbstractClass {
     String name;
 
+    @Override
     public void Greet(String name) {
         this.name = name;
     }

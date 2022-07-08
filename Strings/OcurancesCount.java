@@ -1,12 +1,13 @@
 package Strings;
 
-import java.util.HashMap;
+// import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class OcurancesCount {
 
     public static String getChar(String str) {
         String res = "";
-        HashMap<Character, Integer> chm = new HashMap<>();
+        LinkedHashMap<Character, Integer> chm = new LinkedHashMap<>();
         char ch[] = str.toCharArray();
         for (char c : ch) {
             if (chm.containsKey(c)) {

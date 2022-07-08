@@ -43,6 +43,5 @@ class ConstructorOverloadingCall {
         System.out.println("Object 2");
         System.out.println(co1.roll);
         System.out.println(co1.name);
-        System.out.println(co1.marks);
     }
 }
