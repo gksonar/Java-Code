@@ -13,11 +13,8 @@ public class PrintDuplicates {
         Set<Character> set = new LinkedHashSet<Character>();
         for (char c : s.toCharArray()) {
             set.add(Character.valueOf(c));
-
         }
         set.remove(' ');
         System.out.println(set);
-
     }
-
 }
