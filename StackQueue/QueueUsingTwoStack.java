@@ -12,6 +12,7 @@ public class QueueUsingTwoStack {
         }
 
         public void add(int data) {
+
             while (!s1.empty())
                 s2.push(s1.pop());
             s1.push(data);

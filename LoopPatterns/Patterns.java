@@ -12,6 +12,7 @@ public class Patterns {
         pattern7(5);
         pattern8(5);
         pattern9(5);
+        pattern10(5);
     }
 
     public static void pattern1(int n) {
@@ -80,12 +81,20 @@ public class Patterns {
             }
             System.out.println();
         }
-        for (int row = n - 1; row >= 1; row--) {
-            for (int col = 1; col <= row; col++) {
+
+        for (int row = n; row >= 1; row--) {
+            for (int col = row; col >= 1; col--) {
                 System.out.print("* ");
             }
             System.out.println();
         }
+
+        // for (int row = n - 1; row >= 1; row--) {
+        // for (int col = 1; col <= row; col++) {
+        // System.out.print("* ");
+        // }
+        // System.out.println();
+        // }
 
     }
 
@@ -127,6 +136,34 @@ public class Patterns {
                 System.out.print("*");
             }
             System.out.println();
+        }
+    }
+
+    public static void pattern10(int n) {
+
+        System.out.println("Pattern 10");
+        for (int row = 0; row < n; row++) {
+            int k;
+            for (k = n - row; k >= 1; k--) {
+                System.out.print(" ");
+            }
+            for (int col = k; col < (row * 2) + 1; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+
+        for (int row = 5; row >= 0; row--) {
+            int k;
+            for (k = n - row; k >= 1; k--) {
+                System.out.print(" ");
+            }
+            for (int col = k; col < (row * 2) + 1; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
         }
     }
 }
