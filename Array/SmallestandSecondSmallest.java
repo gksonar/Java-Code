@@ -1,20 +1,28 @@
 package Array;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SmallestandSecondSmallest {
     public static void main(String[] args) {
-        int arr[] = { 10, 20, 9, 8, 10, 12 };
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+        List<Integer> list = new ArrayList<>();
+        for (int i = 1; i <= 5; i++) {
+            list.add(i);
+        }
+        // cheapest(list);
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = 0; j < list.size() - i - 1; j++) {
+                if (list.get(j) < list.get(j + 1)) {
+                    int temp = list.get(j);
+                    list.set(j, list.get(j + 1));
+                    list.set(j + 1, temp);
                 }
 
             }
         }
-        int a = arr.length;
-        System.out.println("Smallest: " + arr[a - 1]);
-        System.out.println("Second Smallest: " + arr[arr.length - 2]);
+        int a = list.size();
+
+        System.out.println(list.get(a - 1));
+        System.out.println(list.get(a - 2));
     }
 }

@@ -52,5 +52,6 @@ public class Pattern {
     public static void main(String[] args) {
         pattern();
         pattern1();
+        System.out.println(1.2 % 7);
     }
 }
