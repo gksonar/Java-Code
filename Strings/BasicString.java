@@ -20,4 +20,5 @@ public class BasicString {
         System.out.println((char) ('a' + 3)); // converting ascii into character
         System.out.println("a" + 3);
     }
+
 }

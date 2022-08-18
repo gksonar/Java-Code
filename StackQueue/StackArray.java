@@ -36,14 +36,12 @@ public class StackArray {
         }
 
         public int peek() {
-            if (top == -1) {
-                return -1;
-            }
+            isEmpty();
             return arr[top];
         }
 
         public static void display() {
-            System.out.println("Printing stack elements .....");
+            // System.out.println("Printing stack elements .....");
             for (int i = top; i > 0; i--) {
                 System.out.println(arr[i]);
             }
@@ -54,10 +52,14 @@ public class StackArray {
             s.push(10);
             s.push(20);
             s.push(30);
-            if (!s.isEmpty()) {
-                System.out.println(s.peek());
-                s.pop();
-            }
+            System.out.println("Top: " + s.peek());
+            s.pop();
+            display();
+            System.out.println("Top: " + s.peek());
+            // if (!s.isEmpty()) {
+            // System.out.println(s.peek());
+            // s.pop();
+            // }
             display();
 
         }
