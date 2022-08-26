@@ -1,38 +1,32 @@
 package InterviewQuestion;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrimeNumber {
-    public static boolean isPrime(int no) {
-        int m = no / 2;
-        if (no == 1 || no == 2) {
-            return true;
-        } else {
-            for (int i = 2; i <= m; i++) {
-                if (no % i == 0) {
-                    return false;
-                }
+
+    public static int isprime1(long n) {
+
+        boolean flag = true;
+        List<Integer> l = new ArrayList<>();
+
+        // Check if number is less than
+        // equal to 1
+        if (n == 1)
+            return 1;
+        else if (n == 2)
+            return 1;
+
+        for (int i = 2; i <= Math.sqrt(n); i += 2) {
+            if (n % i == 0) {
+                l.add(i);
+                flag = false;
             }
-            return true;
         }
-
-    }
-
-    public static void isRangePrime(int no) {
-
-        // boolean a = true;
-        for (int i = 2; i <= no; i++) {
-            if (isPrime(i)) {
-                System.out.print(i + " ");
-            }
-
-        }
-
+        return (flag == true) ? 1 : l.get(0);
     }
 
     public static void main(String[] args) {
-        int a = 97;
-        System.out.println(isPrime(a));
-
-        // int a = 2;
-        isRangePrime(15);
+        System.out.println(isprime1(4));
     }
 }

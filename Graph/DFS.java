@@ -1,33 +1,23 @@
 package Graph;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
 
-public class BFS {
-    public static ArrayList<Integer> bfs(int i, ArrayList<ArrayList<Integer>> a) {
-        boolean[] vis = new boolean[i + 1];
-        ArrayList<Integer> ar = new ArrayList<>();
-        for (int j = 1; j <= i; j++) {
-            if (vis[i] == false) {
-                Queue<Integer> q = new LinkedList<>();
-                q.add(i);
-                vis[i] = true;
-                while (!q.isEmpty()) {
-                    int node = q.poll();
-                    ar.add(node);
-                    for (int it : a.get(node)) {
-                        if (vis[it] == false) {
-                            vis[it] = true;
-                            q.add(it);
-                        }
-                    }
-                }
-                // System.out.println(Arrays.toString(vis));
+public class DFS {
+    public static ArrayList<Integer> dfs(int i, ArrayList<ArrayList<Integer>> a) {
+        boolean vis[] = new boolean[i + 1];
+        ArrayList<Integer> ans = new ArrayList<>();
+        dfsofG(i, a, vis, ans);
+        return ans;
+    }
+
+    public static void dfsofG(int v, ArrayList<ArrayList<Integer>> a, boolean vis[], ArrayList<Integer> ans) {
+        vis[v] = true;
+        ans.add(v);
+        for (Integer neighbor : a.get(v)) {
+            if (!vis[neighbor]) {
+                dfsofG(neighbor, a, vis, ans);
             }
         }
-
-        return ar;
     }
 
     public static void main(String[] args) {
@@ -63,6 +53,6 @@ public class BFS {
             }
             System.out.println();
         }
-        System.out.println(bfs(n, a));
+        System.out.println(dfs(1, a));
     }
 }

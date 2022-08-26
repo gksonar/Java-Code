@@ -10,6 +10,8 @@ public class AdjacencyMatrixRepresentation {
         for (int i = 0; i <= n; i++) {
             a.add(new ArrayList<>());
         }
+
+
         System.out.println(a);
 
         a.get(1).add(2);

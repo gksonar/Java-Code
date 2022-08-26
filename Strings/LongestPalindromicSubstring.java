@@ -9,8 +9,7 @@ public class LongestPalindromicSubstring {
         for (int i = 0; i < s.length(); i++) {
             rev = s.charAt(i) + rev;
         }
-        // System.out.println(rev);
-        // System.out.println(os);
+    
         if (os.equals(rev)) {
             return os;
         }
@@ -28,7 +27,7 @@ public class LongestPalindromicSubstring {
                 s1 = "";
                 // s1 = solve(s.substring(i, j + 1));
                 s1 = solve(s.substring(i, j + 1));
-                if (s1 != null) {
+                if (s1 != null) {         //abcddcb= abc
                     a.add(s1);
                 }
             }
