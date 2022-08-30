@@ -7,11 +7,12 @@ public class ReverseNumber {
             rev = rev * 10 + num % 10;
             num = num / 10;
         }
+        System.out.println(rev);
         return rev;
     }
 
     public static void main(String[] args) {
-        int num = 1221;
+        int num = 1231;
         int rev = ReverseNum(num);
         System.out.println(rev);
         if (num == rev) {

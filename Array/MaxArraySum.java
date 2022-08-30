@@ -2,19 +2,20 @@ package Array;
 
 public class MaxArraySum {
     public static void main(String[] args) {
-        int arr[] = { 10, 11, 3, 4, 5, 6, 1, 2, 3 };
-        int max = 0, curr_sum = 0;
-        int k = 3;
+        int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+        int min = 0, curr_sum = 0;
+        int k = 4;
         for (int i = 0; i < k; i++)
-            max += arr[i];
+            min += arr[i];
 
-        curr_sum = max;
+        curr_sum = min;
         for (int j = k; j < arr.length; j++) {
             curr_sum += arr[j] - arr[j - k];
-            max = Math.max(max, curr_sum);
+            min = Math.min(min, curr_sum);
         }
 
-        System.out.println(max);
+        System.out.println(min);
 
     }
+
 }
