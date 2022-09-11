@@ -2,9 +2,8 @@ package Oop;
 
 public abstract class AbstractClass {
 
-    abstract void Greet(String name);
-
     void display() {
+        System.out.println("HelloGGGGGGGGGGGGGGGGG");
     }
 
 }
@@ -12,10 +11,10 @@ public abstract class AbstractClass {
 class HiGreet extends AbstractClass {
     String name;
 
-    @Override
-    public void Greet(String name) {
-        this.name = name;
-    }
+    // @Override
+    // public void Greet(String name) {
+    // this.name = name;
+    // }
 
     public void display() {
         System.out.println("Hi Greet Call: " + name);
@@ -25,10 +24,10 @@ class HiGreet extends AbstractClass {
 class HelloGreet extends AbstractClass {
     String name;
 
-    @Override
-    public void Greet(String name) {
-        this.name = name;
-    }
+    // @Override
+    // public void Greet(String name) {
+    // this.name = name;
+    // }
 
     public void display() {
         System.out.println("Hello Greet Call: " + name);
@@ -36,11 +35,11 @@ class HelloGreet extends AbstractClass {
 
     public static void main(String[] args) {
         HiGreet a = new HiGreet();
-        a.Greet("Gaurav");
+        // a.Greet("Gaurav");
         a.display();
 
         HelloGreet b = new HelloGreet();
-        b.Greet("Sonar");
+        // b.Greet("Sonar");
         b.display();
 
     }

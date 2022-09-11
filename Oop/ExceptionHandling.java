@@ -3,12 +3,13 @@ package Oop;
 public class ExceptionHandling {
     public static void main(String[] args) {
         int ans = 0;
-        int a = 10, b = 0;
+        int a = 10, b = 2;
         try {
             ans = divide(a, b);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
+            System.out.println("hey im Always be there");
             if (ans == 0) {
                 System.out.println("Im always Executing..");
             } else

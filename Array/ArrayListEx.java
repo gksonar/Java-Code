@@ -11,6 +11,8 @@ public class ArrayListEx {
         list.add(15);
         list.add(12);
         list.add(25);
+       
+        System.out.println(list.size());
         System.out.println("Original Array List: " + list);
         Collections.sort(list);
         System.out.println("Sorted List" + list);

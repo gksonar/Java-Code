@@ -1,21 +1,21 @@
 package Oop;
 
 class Shapes {
-    void area() {
+        void area() {
         System.out.println("Shapes Area Called");
     }
 }
 
 class Square extends Shapes {
     @Override // This annotation represents the method is overridden or not.
-    void area() {
+        void area() {
         System.out.println("Square Area Called");
     }
 }
 
 class Circle extends Shapes {
     @Override
-    void area() {
+        void area() {
         System.out.println("Circle Area Called");
     }
 }

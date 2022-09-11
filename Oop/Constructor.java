@@ -5,9 +5,14 @@ public class Constructor {
     String name;
     float marks = 10;
 
-    Constructor() {
+     Constructor() {
         roll = 10;
         name = "Gaurav";
+    }
+
+     Constructor(int roll, String name) {
+        roll = this.roll;
+        name = this.name;
     }
 
 }

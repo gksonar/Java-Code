@@ -6,7 +6,6 @@ public class FibonacciSeriesRecursion {
     public static void Fibonacci(int count) {
         if (count > 0) {
             n3 = n1 + n2;
-
             n1 = n2;
             n2 = n3;
             System.out.print(" " + n3);
